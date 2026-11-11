@@ -7,7 +7,9 @@ export type SimulationUnit = 'u1' | 'u2' | 'u3' | 'u4';
 
 export interface UnitInfo {
   id: SimulationUnit;
+  shortCode: string;
   title: string;
+  shortTitle: string;
   badge: string;
   description: string;
 }
@@ -15,25 +17,33 @@ export interface UnitInfo {
 export const SIMULATION_UNITS: UnitInfo[] = [
   {
     id: 'u1',
+    shortCode: 'U1',
     title: 'Unidad 1: Electrostática y Potencial',
+    shortTitle: 'Electrostática y Potencial',
     badge: 'Campo Eléctrico 3D',
     description: 'Visualizador de cargas, líneas de campo RK4, superficies equipotenciales y trayectorias.',
   },
   {
     id: 'u2',
+    shortCode: 'U2',
     title: 'Unidad 2: Capacitores y Dieléctricos',
+    shortTitle: 'Capacitores y Dieléctricos',
     badge: 'Capacitancia',
     description: 'Placas paralelas, variación de área, distancia, constante dieléctrica y energía almacenada.',
   },
   {
     id: 'u3',
+    shortCode: 'U3',
     title: 'Unidad 3: Corriente y Ley de Ohm',
+    shortTitle: 'Corriente y Ley de Ohm',
     badge: 'Circuitos MNA',
     description: 'Simulador de circuitos serie, paralelo y mixto con análisis nodal y Ley de Ohm en tiempo real.',
   },
   {
     id: 'u4',
+    shortCode: 'U4',
     title: 'Unidad 4: Magnetismo y Fuerza de Lorentz',
+    shortTitle: 'Magnetismo y Lorentz',
     badge: 'Campos E y B',
     description: 'Biot-Savart, dipolos magnéticos y dinámica de partículas bajo el Algoritmo de Boris.',
   },
